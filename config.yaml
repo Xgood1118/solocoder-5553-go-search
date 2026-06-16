@@ -1,0 +1,47 @@
+data_dir: data
+server_port: 8080
+metrics_port: 9090
+
+index:
+  shards: 1
+  flush_seconds: 5
+  max_mem_docs: 10000
+  merge_factor: 4
+
+analyzer:
+  default: standard
+  stop_words:
+    - 的
+    - 了
+    - 是
+    - 在
+    - 我
+    - 有
+    - 和
+    - 就
+    - 不
+    - 人
+    - 都
+    - 一
+    - 一个
+    - 上
+    - 也
+    - 很
+    - to
+    - the
+    - a
+    - an
+    - is
+    - are
+    - was
+    - were
+    - be
+    - been
+    - being
+    - have
+    - has
+    - had
+  custom_dicts:
+    - 搜索引擎
+    - 全文检索
+    - 倒排索引
